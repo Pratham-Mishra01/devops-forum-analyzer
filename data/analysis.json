@@ -1,0 +1,48 @@
+{
+  "total_questions": 50,
+  "top_tags": [
+    [
+      "azure-devops",
+      7
+    ],
+    [
+      "docker",
+      6
+    ],
+    [
+      "azure",
+      6
+    ],
+    [
+      "amazon-web-services",
+      5
+    ],
+    [
+      "git",
+      5
+    ],
+    [
+      "cicd",
+      5
+    ],
+    [
+      "continuous-integration",
+      4
+    ],
+    [
+      "kubernetes",
+      3
+    ],
+    [
+      "python",
+      3
+    ],
+    [
+      "bitbucket",
+      2
+    ]
+  ],
+  "average_score": 5.12,
+  "average_answer_count": 1.82,
+  "resolved_percentage": 42.0
+}
