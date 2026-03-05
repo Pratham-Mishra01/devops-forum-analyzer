@@ -28,3 +28,9 @@ jobs:
       - name: Run pipeline
         run: |
           python pipeline.py
+          
+      - name: Upload analysis results
+        uses: actions/upload-artifact@v3
+        with:
+          name: analysis-report
+          path: data/analysis.json
