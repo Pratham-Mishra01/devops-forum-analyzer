@@ -1,4 +1,4 @@
-nae: Devops Forum Analyzer CI
+name: Devops Forum Analyzer CI
 
 on:
   push:
