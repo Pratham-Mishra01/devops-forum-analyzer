@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          pytest
         
       - name: Run pipeline
         run: |
