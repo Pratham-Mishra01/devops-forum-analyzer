@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Forum Analyzer Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>DevOps Community Dashboard</h1>
+
+    <div class="metrics">
+
+        <div class="card">
+            <h3>Average Score</h3>
+            <p>{{ analysis.average_score }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Answer Count</h3>
+            <p>{{ analysis.average_answer_count }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Resolved Percentage</h3>
+            <p>{{ analysis.resolved_percentage }}%</p>
+        </div>
+
+    </div>
+
+    <h2>Top Tags</h2>
+
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Count</th>
+        </tr>
+
+        {% for tag in analysis.top_tags %}
+        <tr>
+            <td>{{ tag[0] }}</td>
+            <td>{{ tag[1] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
