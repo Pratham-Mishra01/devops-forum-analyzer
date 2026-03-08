@@ -38,6 +38,11 @@ def compute_statistics(questions):
     total_score = 0
     total_answers = 0
     answered_count = 0
+    total_views = 0
+    accepted_count = 0
+    highest_views = 0
+    most_viewed_question = ""
+    top_reputation = 0
 
     # This list will contain every tag from every question
     all_tags = []
@@ -58,6 +63,22 @@ def compute_statistics(questions):
         tags = q.get("tags", [])
         all_tags.extend(tags)
 
+        # Add total views
+        total_views += q.get("view_count", 0)
+
+        # Count accepted answers
+        if q.get("accepted_answer_id"):
+            accepted_count += 1
+
+        # Track most viewed question
+        if q.get("view_count", 0) > highest_views:
+            highest_views = q["view_count"]
+            most_viewed_question = q["title"]
+
+        # Track highest contributor reputation
+        if q.get("owner_reputation", 0) > top_reputation:
+            top_reputation = q["owner_reputation"]
+
     # Remove the forced "devops" tag since every question contains it
     filtered_tags = [tag for tag in all_tags if tag != "devops"]
 
@@ -71,14 +92,52 @@ def compute_statistics(questions):
     avg_score = total_score / total_questions
     avg_answers = total_answers / total_questions
     resolved_percentage = (answered_count / total_questions) * 100
+    avg_views = total_views / total_questions
+    accepted_rate = (accepted_count / total_questions) * 100
+
+    category_map = {
+    "docker": "Containers",
+    "kubernetes": "Containers",
+    "azure": "Cloud",
+    "amazon-web-services": "Cloud",
+    "azure-devops": "CI/CD",
+    "cicd": "CI/CD",
+    "continuous-integration": "CI/CD"
+    }
+
+    category_counter = Counter()
+
+    for tag in filtered_tags:
+        if tag in category_map:
+            category_counter[category_map[tag]] += 1
+
+    dominant_category = category_counter.most_common(1)[0][0] if category_counter else "Unknown"
 
     # Round values for cleaner dashboard display
     results = {
-        "total_questions": total_questions,
-        "top_tags": top_tags,
-        "average_score": round(avg_score, 2),
-        "average_answer_count": round(avg_answers, 2),
-        "resolved_percentage": round(resolved_percentage, 2)
+       
+    "total_questions": total_questions,
+
+    "top_tags": top_tags,
+
+    "average_score": round(avg_score, 2),
+
+    "average_answer_count": round(avg_answers, 2),
+
+    "resolved_percentage": round(resolved_percentage, 2),
+
+    "average_views": round(avg_views, 2),
+
+    "highest_view_count": highest_views,
+
+    "accepted_resolution_rate": round(accepted_rate, 2),
+
+    "top_contributor_reputation": top_reputation,
+
+    "most_viewed_question": most_viewed_question,
+
+    "dominant_category": dominant_category
+
     }
 
     return results

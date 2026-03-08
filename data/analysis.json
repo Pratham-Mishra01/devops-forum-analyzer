@@ -44,5 +44,11 @@
   ],
   "average_score": 5.34,
   "average_answer_count": 1.88,
-  "resolved_percentage": 44.0
+  "resolved_percentage": 44.0,
+  "average_views": 15959.64,
+  "highest_view_count": 338148,
+  "accepted_resolution_rate": 12.0,
+  "top_contributor_reputation": 31322,
+  "most_viewed_question": "How do I change timezone in a docker container?",
+  "dominant_category": "CI/CD"
 }
