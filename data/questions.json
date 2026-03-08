@@ -9,7 +9,12 @@
     "score": 4,
     "answer_count": 3,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/45740968/pid-file-found-but-no-matching-process-was-found-stop-aborted"
+    "link": "https://stackoverflow.com/questions/45740968/pid-file-found-but-no-matching-process-was-found-stop-aborted",
+    "view_count": 10722,
+    "creation_date": 1502988815,
+    "last_activity_date": 1772463920,
+    "accepted_answer_id": null,
+    "owner_reputation": 41
   },
   {
     "title": "Is it possible to use steamcmd to set a build live on a specific Steam branch?",
@@ -22,7 +27,12 @@
     "score": 1,
     "answer_count": 2,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/76095917/is-it-possible-to-use-steamcmd-to-set-a-build-live-on-a-specific-steam-branch"
+    "link": "https://stackoverflow.com/questions/76095917/is-it-possible-to-use-steamcmd-to-set-a-build-live-on-a-specific-steam-branch",
+    "view_count": 1901,
+    "creation_date": 1682368674,
+    "last_activity_date": 1772343391,
+    "accepted_answer_id": null,
+    "owner_reputation": 21
   },
   {
     "title": "Scalable solution for implementing CDC and building Medallion data lake using AWS DMS data on Apache Iceberg and AWS Glue",
@@ -36,7 +46,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79898345/scalable-solution-for-implementing-cdc-and-building-medallion-data-lake-using-aw"
+    "link": "https://stackoverflow.com/questions/79898345/scalable-solution-for-implementing-cdc-and-building-medallion-data-lake-using-aw",
+    "view_count": 45,
+    "creation_date": 1772270903,
+    "last_activity_date": 1772285906,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "How to restrict branch creation using wildcards without overlapping specific patterns?",
@@ -49,7 +64,12 @@
     "score": 2,
     "answer_count": 2,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79896961/how-to-restrict-branch-creation-using-wildcards-without-overlapping-specific-pat"
+    "link": "https://stackoverflow.com/questions/79896961/how-to-restrict-branch-creation-using-wildcards-without-overlapping-specific-pat",
+    "view_count": 53,
+    "creation_date": 1772105962,
+    "last_activity_date": 1772189619,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "Ansible configuration: Paths not relative to ansible.cfg?",
@@ -61,21 +81,12 @@
     "score": 2,
     "answer_count": 2,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/74024709/ansible-configuration-paths-not-relative-to-ansible-cfg"
-  },
-  {
-    "title": "Docker Swarm global service not running on all nodes due to \u201cinvalid pool request\u201d / overlay network issues",
-    "tags": [
-      "docker",
-      "command-line-interface",
-      "devops",
-      "monitoring",
-      "docker-swarm"
-    ],
-    "score": -1,
-    "answer_count": 0,
-    "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79888046/docker-swarm-global-service-not-running-on-all-nodes-due-to-invalid-pool-reques"
+    "link": "https://stackoverflow.com/questions/74024709/ansible-configuration-paths-not-relative-to-ansible-cfg",
+    "view_count": 1371,
+    "creation_date": 1665474693,
+    "last_activity_date": 1772157056,
+    "accepted_answer_id": null,
+    "owner_reputation": 1306
   },
   {
     "title": "Setting environment variables in deployment from Vault secret",
@@ -88,7 +99,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79670788/setting-environment-variables-in-deployment-from-vault-secret"
+    "link": "https://stackoverflow.com/questions/79670788/setting-environment-variables-in-deployment-from-vault-secret",
+    "view_count": 130,
+    "creation_date": 1750256032,
+    "last_activity_date": 1771913799,
+    "accepted_answer_id": null,
+    "owner_reputation": 23
   },
   {
     "title": "Is there a sandbox, emulator or synthetic feed for testing a Datadog integration without real data?",
@@ -101,7 +117,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79894512/is-there-a-sandbox-emulator-or-synthetic-feed-for-testing-a-datadog-integration"
+    "link": "https://stackoverflow.com/questions/79894512/is-there-a-sandbox-emulator-or-synthetic-feed-for-testing-a-datadog-integration",
+    "view_count": 62,
+    "creation_date": 1771842671,
+    "last_activity_date": 1771873315,
+    "accepted_answer_id": null,
+    "owner_reputation": 31322
   },
   {
     "title": "How to manage and isolate multiple instances of the same Python worker script dynamically",
@@ -115,7 +136,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79892511/how-to-manage-and-isolate-multiple-instances-of-the-same-python-worker-script-dy"
+    "link": "https://stackoverflow.com/questions/79892511/how-to-manage-and-isolate-multiple-instances-of-the-same-python-worker-script-dy",
+    "view_count": 58,
+    "creation_date": 1771534782,
+    "last_activity_date": 1771558333,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "Communication between docker containers in aws ecs through rabbitmq",
@@ -129,7 +155,12 @@
     "score": 2,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/53878890/communication-between-docker-containers-in-aws-ecs-through-rabbitmq"
+    "link": "https://stackoverflow.com/questions/53878890/communication-between-docker-containers-in-aws-ecs-through-rabbitmq",
+    "view_count": 8364,
+    "creation_date": 1545363727,
+    "last_activity_date": 1770905310,
+    "accepted_answer_id": null,
+    "owner_reputation": 475
   },
   {
     "title": "Github Actions pipeline terminates after 10 minutes with a timeout",
@@ -141,7 +172,12 @@
     "score": 1,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/78634797/github-actions-pipeline-terminates-after-10-minutes-with-a-timeout"
+    "link": "https://stackoverflow.com/questions/78634797/github-actions-pipeline-terminates-after-10-minutes-with-a-timeout",
+    "view_count": 1431,
+    "creation_date": 1718661215,
+    "last_activity_date": 1770750218,
+    "accepted_answer_id": null,
+    "owner_reputation": 11
   },
   {
     "title": "Self-Hosted Devops agent - Config launching error",
@@ -153,7 +189,12 @@
     "score": 6,
     "answer_count": 3,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/67820880/self-hosted-devops-agent-config-launching-error"
+    "link": "https://stackoverflow.com/questions/67820880/self-hosted-devops-agent-config-launching-error",
+    "view_count": 5676,
+    "creation_date": 1622720727,
+    "last_activity_date": 1770717965,
+    "accepted_answer_id": 67824847,
+    "owner_reputation": 938
   },
   {
     "title": "error NU1100: Unable to resolve &#39;XYZ&#39; for &#39;net8.0&#39;. PackageSourceMapping is enabled, the following source(s) were not considered: feed-Uno, nuget.org",
@@ -167,7 +208,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79886391/error-nu1100-unable-to-resolve-xyz-for-net8-0-packagesourcemapping-is-enab"
+    "link": "https://stackoverflow.com/questions/79886391/error-nu1100-unable-to-resolve-xyz-for-net8-0-packagesourcemapping-is-enab",
+    "view_count": 68,
+    "creation_date": 1770706525,
+    "last_activity_date": 1770709981,
+    "accepted_answer_id": null,
+    "owner_reputation": 30913
   },
   {
     "title": "Send (mass) notification emails to users. What is the right way?",
@@ -179,7 +225,12 @@
     "score": 0,
     "answer_count": 3,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79885924/send-mass-notification-emails-to-users-what-is-the-right-way"
+    "link": "https://stackoverflow.com/questions/79885924/send-mass-notification-emails-to-users-what-is-the-right-way",
+    "view_count": 70,
+    "creation_date": 1770647345,
+    "last_activity_date": 1770677610,
+    "accepted_answer_id": null,
+    "owner_reputation": 50
   },
   {
     "title": "How to keep AWS accounts tidy?",
@@ -192,7 +243,12 @@
     "score": 2,
     "answer_count": 5,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79876166/how-to-keep-aws-accounts-tidy"
+    "link": "https://stackoverflow.com/questions/79876166/how-to-keep-aws-accounts-tidy",
+    "view_count": 69,
+    "creation_date": 1769415477,
+    "last_activity_date": 1770039151,
+    "accepted_answer_id": null,
+    "owner_reputation": 64
   },
   {
     "title": "SCA tools for reporting open functional bugs in opensource dependencies",
@@ -202,7 +258,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79879179/sca-tools-for-reporting-open-functional-bugs-in-opensource-dependencies"
+    "link": "https://stackoverflow.com/questions/79879179/sca-tools-for-reporting-open-functional-bugs-in-opensource-dependencies",
+    "view_count": 31,
+    "creation_date": 1769752800,
+    "last_activity_date": 1769784486,
+    "accepted_answer_id": null,
+    "owner_reputation": 2988
   },
   {
     "title": "How to implement auto stop for idle or inactive applications on Google cloud platform like Heroku does?",
@@ -215,7 +276,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/64759170/how-to-implement-auto-stop-for-idle-or-inactive-applications-on-google-cloud-pla"
+    "link": "https://stackoverflow.com/questions/64759170/how-to-implement-auto-stop-for-idle-or-inactive-applications-on-google-cloud-pla",
+    "view_count": 497,
+    "creation_date": 1604955434,
+    "last_activity_date": 1769783828,
+    "accepted_answer_id": null,
+    "owner_reputation": 16994
   },
   {
     "title": "Argo CD App of Apps \u2013 How to automatically sync a dependent application when syncing another app?",
@@ -229,7 +295,12 @@
     "score": 3,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79854498/argo-cd-app-of-apps-how-to-automatically-sync-a-dependent-application-when-syn"
+    "link": "https://stackoverflow.com/questions/79854498/argo-cd-app-of-apps-how-to-automatically-sync-a-dependent-application-when-syn",
+    "view_count": 122,
+    "creation_date": 1766594500,
+    "last_activity_date": 1769729832,
+    "accepted_answer_id": null,
+    "owner_reputation": 890
   },
   {
     "title": "Envoy: &quot;upstream connect error or disconnect/reset before headers. reset reason: connection failure&quot;",
@@ -243,7 +314,12 @@
     "score": 3,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/69897433/envoy-upstream-connect-error-or-disconnect-reset-before-headers-reset-reason"
+    "link": "https://stackoverflow.com/questions/69897433/envoy-upstream-connect-error-or-disconnect-reset-before-headers-reset-reason",
+    "view_count": 12181,
+    "creation_date": 1636457772,
+    "last_activity_date": 1769457685,
+    "accepted_answer_id": null,
+    "owner_reputation": 39
   },
   {
     "title": "Assignment on DevOps Engineering class",
@@ -257,7 +333,12 @@
     "score": 0,
     "answer_count": 2,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79876479/assignment-on-devops-engineering-class"
+    "link": "https://stackoverflow.com/questions/79876479/assignment-on-devops-engineering-class",
+    "view_count": 51,
+    "creation_date": 1769443097,
+    "last_activity_date": 1769446765,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "Facing issue in restarting the nginx server after few changes",
@@ -269,7 +350,12 @@
     "score": 1,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/75808150/facing-issue-in-restarting-the-nginx-server-after-few-changes"
+    "link": "https://stackoverflow.com/questions/75808150/facing-issue-in-restarting-the-nginx-server-after-few-changes",
+    "view_count": 9574,
+    "creation_date": 1679454803,
+    "last_activity_date": 1769396605,
+    "accepted_answer_id": null,
+    "owner_reputation": 11
   },
   {
     "title": "Azure devops can&#39;t find custom nuget package",
@@ -283,7 +369,12 @@
     "score": 4,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/78126236/azure-devops-cant-find-custom-nuget-package"
+    "link": "https://stackoverflow.com/questions/78126236/azure-devops-cant-find-custom-nuget-package",
+    "view_count": 2128,
+    "creation_date": 1709884737,
+    "last_activity_date": 1769072200,
+    "accepted_answer_id": 78126431,
+    "owner_reputation": 4538
   },
   {
     "title": "How to extract the number of passed and failed test cases from Jenkins CI pipeline?",
@@ -296,7 +387,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79636599/how-to-extract-the-number-of-passed-and-failed-test-cases-from-jenkins-ci-pipeli"
+    "link": "https://stackoverflow.com/questions/79636599/how-to-extract-the-number-of-passed-and-failed-test-cases-from-jenkins-ci-pipeli",
+    "view_count": 96,
+    "creation_date": 1748077471,
+    "last_activity_date": 1768746715,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "Bitbucket Build Status of Pull Request showing failed builds, instead of latest build status",
@@ -309,7 +405,12 @@
     "score": 13,
     "answer_count": 0,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/70605000/bitbucket-build-status-of-pull-request-showing-failed-builds-instead-of-latest"
+    "link": "https://stackoverflow.com/questions/70605000/bitbucket-build-status-of-pull-request-showing-failed-builds-instead-of-latest",
+    "view_count": 6393,
+    "creation_date": 1641461475,
+    "last_activity_date": 1768284847,
+    "accepted_answer_id": null,
+    "owner_reputation": 131
   },
   {
     "title": "Azure ARM template with array as parameter",
@@ -322,7 +423,12 @@
     "score": 2,
     "answer_count": 3,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/44551577/azure-arm-template-with-array-as-parameter"
+    "link": "https://stackoverflow.com/questions/44551577/azure-arm-template-with-array-as-parameter",
+    "view_count": 13084,
+    "creation_date": 1497462944,
+    "last_activity_date": 1768284250,
+    "accepted_answer_id": null,
+    "owner_reputation": 7128
   },
   {
     "title": "backup and dump in neo4j-comunity docker container",
@@ -336,7 +442,12 @@
     "score": 4,
     "answer_count": 3,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/72472771/backup-and-dump-in-neo4j-comunity-docker-container"
+    "link": "https://stackoverflow.com/questions/72472771/backup-and-dump-in-neo4j-comunity-docker-container",
+    "view_count": 1493,
+    "creation_date": 1654157212,
+    "last_activity_date": 1768283345,
+    "accepted_answer_id": 72484070,
+    "owner_reputation": 123
   },
   {
     "title": "Which Career Path Should I Choose: DevOps/Cloud or Full-Stack?",
@@ -349,7 +460,12 @@
     "score": 2,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79864323/which-career-path-should-i-choose-devops-cloud-or-full-stack"
+    "link": "https://stackoverflow.com/questions/79864323/which-career-path-should-i-choose-devops-cloud-or-full-stack",
+    "view_count": 71,
+    "creation_date": 1767964113,
+    "last_activity_date": 1768187858,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "How test role specific tags within scenario in Ansible Molecule?",
@@ -361,7 +477,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79864997/how-test-role-specific-tags-within-scenario-in-ansible-molecule"
+    "link": "https://stackoverflow.com/questions/79864997/how-test-role-specific-tags-within-scenario-in-ansible-molecule",
+    "view_count": 74,
+    "creation_date": 1768052504,
+    "last_activity_date": 1768057463,
+    "accepted_answer_id": null,
+    "owner_reputation": 702
   },
   {
     "title": "AWS Amplify failing to reconnect GitHub repository after ownership transfer (Moved Permanently error)",
@@ -374,7 +495,12 @@
     "score": 1,
     "answer_count": 0,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79863977/aws-amplify-failing-to-reconnect-github-repository-after-ownership-transfer-mov"
+    "link": "https://stackoverflow.com/questions/79863977/aws-amplify-failing-to-reconnect-github-repository-after-ownership-transfer-mov",
+    "view_count": 92,
+    "creation_date": 1767940546,
+    "last_activity_date": 1767940546,
+    "accepted_answer_id": null,
+    "owner_reputation": 11
   },
   {
     "title": "Invalid tag: missing manifest digest when exporting nx docker image to GitLab docker container using Azure DevOps CI",
@@ -388,7 +514,12 @@
     "score": 16,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/76654491/invalid-tag-missing-manifest-digest-when-exporting-nx-docker-image-to-gitlab-do"
+    "link": "https://stackoverflow.com/questions/76654491/invalid-tag-missing-manifest-digest-when-exporting-nx-docker-image-to-gitlab-do",
+    "view_count": 13643,
+    "creation_date": 1688997459,
+    "last_activity_date": 1766397414,
+    "accepted_answer_id": null,
+    "owner_reputation": 349
   },
   {
     "title": "Artifactory JCR 7.125.8 login stuck on \u201cPending\u2026\u201d after entering admin/password (Ubuntu 22.04 VM)",
@@ -402,7 +533,12 @@
     "score": -1,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79842856/artifactory-jcr-7-125-8-login-stuck-on-pending-after-entering-admin-password"
+    "link": "https://stackoverflow.com/questions/79842856/artifactory-jcr-7-125-8-login-stuck-on-pending-after-entering-admin-password",
+    "view_count": 515,
+    "creation_date": 1765364868,
+    "last_activity_date": 1766083259,
+    "accepted_answer_id": null,
+    "owner_reputation": 7
   },
   {
     "title": "Multi repository synchronisation for deployment",
@@ -415,7 +551,12 @@
     "score": 1,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79843320/multi-repository-synchronisation-for-deployment"
+    "link": "https://stackoverflow.com/questions/79843320/multi-repository-synchronisation-for-deployment",
+    "view_count": 58,
+    "creation_date": 1765390830,
+    "last_activity_date": 1765391806,
+    "accepted_answer_id": null,
+    "owner_reputation": 379
   },
   {
     "title": "Windows Active Directory monitoring with zabbix",
@@ -428,7 +569,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/63390096/windows-active-directory-monitoring-with-zabbix"
+    "link": "https://stackoverflow.com/questions/63390096/windows-active-directory-monitoring-with-zabbix",
+    "view_count": 9786,
+    "creation_date": 1597303445,
+    "last_activity_date": 1765127120,
+    "accepted_answer_id": null,
+    "owner_reputation": 21
   },
   {
     "title": "How to run my automation(test) on Jenkins without using the Headless",
@@ -441,7 +587,12 @@
     "score": 3,
     "answer_count": 2,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/55595677/how-to-run-my-automationtest-on-jenkins-without-using-the-headless"
+    "link": "https://stackoverflow.com/questions/55595677/how-to-run-my-automationtest-on-jenkins-without-using-the-headless",
+    "view_count": 13350,
+    "creation_date": 1554821597,
+    "last_activity_date": 1764374565,
+    "accepted_answer_id": null,
+    "owner_reputation": 43
   },
   {
     "title": "Can we achieve assigning roles and listing for multiple accounts using Native Terraform approach for AWS which is suitable for dyanmic too?",
@@ -455,7 +606,12 @@
     "score": -4,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79831424/can-we-achieve-assigning-roles-and-listing-for-multiple-accounts-using-native-te"
+    "link": "https://stackoverflow.com/questions/79831424/can-we-achieve-assigning-roles-and-listing-for-multiple-accounts-using-native-te",
+    "view_count": 73,
+    "creation_date": 1764226501,
+    "last_activity_date": 1764248240,
+    "accepted_answer_id": null,
+    "owner_reputation": 1
   },
   {
     "title": "How to revert a merged branch in azure devops/visual studio/git",
@@ -467,7 +623,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/66578455/how-to-revert-a-merged-branch-in-azure-devops-visual-studio-git"
+    "link": "https://stackoverflow.com/questions/66578455/how-to-revert-a-merged-branch-in-azure-devops-visual-studio-git",
+    "view_count": 11683,
+    "creation_date": 1615449569,
+    "last_activity_date": 1764241560,
+    "accepted_answer_id": null,
+    "owner_reputation": 891
   },
   {
     "title": "Doing password rotation with spring-boot",
@@ -480,7 +641,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79831198/doing-password-rotation-with-spring-boot"
+    "link": "https://stackoverflow.com/questions/79831198/doing-password-rotation-with-spring-boot",
+    "view_count": 70,
+    "creation_date": 1764195875,
+    "last_activity_date": 1764216142,
+    "accepted_answer_id": null,
+    "owner_reputation": 1708
   },
   {
     "title": "Git username is inconsistent with gitlab -error",
@@ -493,7 +659,12 @@
     "score": 1,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/77150131/git-username-is-inconsistent-with-gitlab-error"
+    "link": "https://stackoverflow.com/questions/77150131/git-username-is-inconsistent-with-gitlab-error",
+    "view_count": 15488,
+    "creation_date": 1695298277,
+    "last_activity_date": 1764158564,
+    "accepted_answer_id": null,
+    "owner_reputation": 69
   },
   {
     "title": "Hide Organization / Project Settings using Azure DevOps",
@@ -506,7 +677,12 @@
     "score": 1,
     "answer_count": 2,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/73589960/hide-organization-project-settings-using-azure-devops"
+    "link": "https://stackoverflow.com/questions/73589960/hide-organization-project-settings-using-azure-devops",
+    "view_count": 1313,
+    "creation_date": 1662184214,
+    "last_activity_date": 1764157598,
+    "accepted_answer_id": null,
+    "owner_reputation": 43
   },
   {
     "title": "How do you handle CI/CD for APIs? I\u2019m stuck on how setups with multiple local/staging/prod fit together",
@@ -519,7 +695,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79815091/how-do-you-handle-ci-cd-for-apis-i-m-stuck-on-how-setups-with-multiple-local-st"
+    "link": "https://stackoverflow.com/questions/79815091/how-do-you-handle-ci-cd-for-apis-i-m-stuck-on-how-setups-with-multiple-local-st",
+    "view_count": 62,
+    "creation_date": 1762731904,
+    "last_activity_date": 1763093562,
+    "accepted_answer_id": null,
+    "owner_reputation": 11
   },
   {
     "title": "Installing azure devops extension in powershell but getting error",
@@ -533,7 +714,12 @@
     "score": 1,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/75410792/installing-azure-devops-extension-in-powershell-but-getting-error"
+    "link": "https://stackoverflow.com/questions/75410792/installing-azure-devops-extension-in-powershell-but-getting-error",
+    "view_count": 1050,
+    "creation_date": 1676030118,
+    "last_activity_date": 1763067575,
+    "accepted_answer_id": null,
+    "owner_reputation": 37
   },
   {
     "title": "Azure DevOps sort list by state but not alphabetically",
@@ -547,7 +733,12 @@
     "score": 0,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/79811739/azure-devops-sort-list-by-state-but-not-alphabetically"
+    "link": "https://stackoverflow.com/questions/79811739/azure-devops-sort-list-by-state-but-not-alphabetically",
+    "view_count": 79,
+    "creation_date": 1762460535,
+    "last_activity_date": 1762638883,
+    "accepted_answer_id": null,
+    "owner_reputation": 349
   },
   {
     "title": "Conditional Run-Time Approval at Azure DevOps",
@@ -560,7 +751,12 @@
     "score": 0,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79811077/conditional-run-time-approval-at-azure-devops"
+    "link": "https://stackoverflow.com/questions/79811077/conditional-run-time-approval-at-azure-devops",
+    "view_count": 61,
+    "creation_date": 1762422123,
+    "last_activity_date": 1762436486,
+    "accepted_answer_id": null,
+    "owner_reputation": 2757
   },
   {
     "title": "How to remove port from url for node application using nginx",
@@ -574,7 +770,12 @@
     "score": 1,
     "answer_count": 4,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/48583321/how-to-remove-port-from-url-for-node-application-using-nginx"
+    "link": "https://stackoverflow.com/questions/48583321/how-to-remove-port-from-url-for-node-application-using-nginx",
+    "view_count": 1390,
+    "creation_date": 1517576585,
+    "last_activity_date": 1762435284,
+    "accepted_answer_id": null,
+    "owner_reputation": 401
   },
   {
     "title": "how we can see all running services Linux machine?",
@@ -584,10 +785,15 @@
       "command",
       "devops"
     ],
-    "score": 52,
+    "score": 53,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/66314858/how-we-can-see-all-running-services-linux-machine"
+    "link": "https://stackoverflow.com/questions/66314858/how-we-can-see-all-running-services-linux-machine",
+    "view_count": 254694,
+    "creation_date": 1613993373,
+    "last_activity_date": 1762423856,
+    "accepted_answer_id": null,
+    "owner_reputation": 551
   },
   {
     "title": "Azure DevOps add a comment using the Python API",
@@ -599,7 +805,12 @@
     "score": 1,
     "answer_count": 1,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/61206262/azure-devops-add-a-comment-using-the-python-api"
+    "link": "https://stackoverflow.com/questions/61206262/azure-devops-add-a-comment-using-the-python-api",
+    "view_count": 2183,
+    "creation_date": 1586862450,
+    "last_activity_date": 1762329042,
+    "accepted_answer_id": null,
+    "owner_reputation": 131
   },
   {
     "title": "Error response from daemon: manifest for abhishek8054/token-app:latest not found: manifest unknown: manifest unknown",
@@ -612,7 +823,12 @@
     "score": 12,
     "answer_count": 4,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/73441435/error-response-from-daemon-manifest-for-abhishek8054-token-applatest-not-found"
+    "link": "https://stackoverflow.com/questions/73441435/error-response-from-daemon-manifest-for-abhishek8054-token-applatest-not-found",
+    "view_count": 41727,
+    "creation_date": 1661152684,
+    "last_activity_date": 1762247263,
+    "accepted_answer_id": 73441775,
+    "owner_reputation": 409
   },
   {
     "title": "How to commit and push to a private repo(A), from a different repo(B), in github actions workflow (B) , using personal access token",
@@ -625,7 +841,12 @@
     "score": 10,
     "answer_count": 2,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/70225077/how-to-commit-and-push-to-a-private-repoa-from-a-different-repob-in-github"
+    "link": "https://stackoverflow.com/questions/70225077/how-to-commit-and-push-to-a-private-repoa-from-a-different-repob-in-github",
+    "view_count": 7995,
+    "creation_date": 1638616402,
+    "last_activity_date": 1761902781,
+    "accepted_answer_id": 70233177,
+    "owner_reputation": 367
   },
   {
     "title": "How do I change timezone in a docker container?",
@@ -637,7 +858,12 @@
     "score": 108,
     "answer_count": 12,
     "is_answered": true,
-    "link": "https://stackoverflow.com/questions/57607381/how-do-i-change-timezone-in-a-docker-container"
+    "link": "https://stackoverflow.com/questions/57607381/how-do-i-change-timezone-in-a-docker-container",
+    "view_count": 338145,
+    "creation_date": 1566470013,
+    "last_activity_date": 1761711174,
+    "accepted_answer_id": 57608215,
+    "owner_reputation": 1600
   },
   {
     "title": "Azure DevOps \u201cFile Path\u201d PowerShell task fails with \u201cMissingEndCurlyBrace\u201d but script parses and runs fine locally and as inline steps",
@@ -651,6 +877,29 @@
     "score": 2,
     "answer_count": 1,
     "is_answered": false,
-    "link": "https://stackoverflow.com/questions/79798814/azure-devops-file-path-powershell-task-fails-with-missingendcurlybrace-but-s"
+    "link": "https://stackoverflow.com/questions/79798814/azure-devops-file-path-powershell-task-fails-with-missingendcurlybrace-but-s",
+    "view_count": 93,
+    "creation_date": 1761313320,
+    "last_activity_date": 1761674605,
+    "accepted_answer_id": null,
+    "owner_reputation": 87
+  },
+  {
+    "title": "Data Lake Gen2 Upgrade",
+    "tags": [
+      "azure",
+      "devops",
+      "storage",
+      "azure-data-lake"
+    ],
+    "score": 9,
+    "answer_count": 3,
+    "is_answered": true,
+    "link": "https://stackoverflow.com/questions/76930486/data-lake-gen2-upgrade",
+    "view_count": 8603,
+    "creation_date": 1692370815,
+    "last_activity_date": 1761649045,
+    "accepted_answer_id": null,
+    "owner_reputation": 91
   }
 ]

@@ -6,12 +6,8 @@
       7
     ],
     [
-      "docker",
-      6
-    ],
-    [
       "azure",
-      6
+      7
     ],
     [
       "amazon-web-services",
@@ -19,6 +15,10 @@
     ],
     [
       "git",
+      5
+    ],
+    [
+      "docker",
       5
     ],
     [
@@ -42,7 +42,7 @@
       2
     ]
   ],
-  "average_score": 5.12,
-  "average_answer_count": 1.82,
-  "resolved_percentage": 42.0
+  "average_score": 5.34,
+  "average_answer_count": 1.88,
+  "resolved_percentage": 44.0
 }
