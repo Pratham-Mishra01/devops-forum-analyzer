@@ -9,6 +9,7 @@
 
     <h1>DevOps Community Dashboard</h1>
 
+    <!-- Top metrics row -->
     <div class="metrics">
 
         <div class="card">
@@ -26,8 +27,41 @@
             <p>{{ analysis.resolved_percentage }}%</p>
         </div>
 
+        <div class="card">
+            <h3>Average Views</h3>
+            <p>{{ analysis.average_views }}</p>
+        </div>
+
     </div>
 
+    <!-- Insights row -->
+    <div class="insights">
+
+        <div class="card">
+            <h3>Accepted Resolution</h3>
+            <p>{{ analysis.accepted_resolution_rate }}%</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Contributor Reputation</h3>
+            <p>{{ analysis.top_contributor_reputation }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Dominant Category</h3>
+            <p>{{ analysis.dominant_category }}</p>
+        </div>
+
+    </div>
+
+    <!-- Most viewed question -->
+    <h2>Most Viewed Question</h2>
+
+    <div class="card">
+        <p>{{ analysis.most_viewed_question }}</p>
+    </div>
+
+    <!-- Top tags table -->
     <h2>Top Tags</h2>
 
     <table>
@@ -44,6 +78,13 @@
         {% endfor %}
 
     </table>
+
+    <!-- Chart placeholder -->
+    <h2>Tag Distribution</h2>
+
+    <div class="charts">
+        <canvas id="tagsChart"></canvas>
+    </div>
 
 </body>
 </html>
