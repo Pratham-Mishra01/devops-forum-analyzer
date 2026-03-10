@@ -1,9 +1,18 @@
 # render_template is a tool that builds HTML pages
 from flask import Flask, render_template
 import json
+import threading
+import time
+import subprocess
 
 # initializing application
 app=Flask(__name__)
+
+def auto_refresh():
+
+    while True:
+        subprocess.run(["python", "pipeline.py"])
+        time.sleep(60)
 
 # when user visits homepage, run the func immediately below this
 @app.route("/")
@@ -24,4 +33,5 @@ def topics():
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    threading.Thread(target=auto_refresh, daemon=True).start()
+    app.run(debug=False)
