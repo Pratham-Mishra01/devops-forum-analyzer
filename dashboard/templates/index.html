@@ -2,89 +2,208 @@
 <html>
 <head>
     <title>DevOps Forum Analyzer Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <h1>DevOps Community Dashboard</h1>
+    <div class="dashboard-wrapper">
 
-    <!-- Top metrics row -->
-    <div class="metrics">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <span>DevOps<br>Analyzer</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                    Overview
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    Community
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    Explore
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="status-dot"></div>
+                <span>Live Data</span>
+            </div>
+        </aside>
 
-        <div class="card">
-            <h3>Average Score</h3>
-            <p>{{ analysis.average_score }}</p>
-        </div>
+        <!-- Main content -->
+        <main class="main-content">
 
-        <div class="card">
-            <h3>Average Answer Count</h3>
-            <p>{{ analysis.average_answer_count }}</p>
-        </div>
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Community Dashboard</h1>
+                    <p class="header-sub">DevOps Forum — Real-time insights</p>
+                </div>
+                <div class="header-right">
+                    <div class="header-badge">
+                        <div class="pulse-dot"></div>
+                        Updated just now
+                    </div>
+                </div>
+            </header>
 
-        <div class="card">
-            <h3>Resolved Percentage</h3>
-            <p>{{ analysis.resolved_percentage }}%</p>
-        </div>
+            <!-- KPI Row -->
+            <section class="kpi-grid">
 
-        <div class="card">
-            <h3>Average Views</h3>
-            <p>{{ analysis.average_views }}</p>
-        </div>
+                <div class="kpi-card kpi-accent-blue">
+                    <div class="kpi-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-label">Average Score</span>
+                        <span class="kpi-value">{{ analysis.average_score }}</span>
+                    </div>
+                </div>
 
+                <div class="kpi-card kpi-accent-teal">
+                    <div class="kpi-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-label">Avg. Answer Count</span>
+                        <span class="kpi-value">{{ analysis.average_answer_count }}</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card kpi-accent-green">
+                    <div class="kpi-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-label">Resolved</span>
+                        <span class="kpi-value">{{ analysis.resolved_percentage }}<small>%</small></span>
+                    </div>
+                </div>
+
+                <div class="kpi-card kpi-accent-purple">
+                    <div class="kpi-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-label">Average Views</span>
+                        <span class="kpi-value">{{ analysis.average_views }}</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Insight Row -->
+            <section class="insight-row">
+
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <span class="insight-label">Accepted Resolution Rate</span>
+                        <div class="insight-pill pill-green">Metric</div>
+                    </div>
+                    <div class="insight-value">{{ analysis.accepted_resolution_rate }}<span class="insight-unit">%</span></div>
+                    <div class="insight-bar">
+                        <div class="insight-bar-fill" style="width: {{ analysis.accepted_resolution_rate }}%"></div>
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <span class="insight-label">Top Contributor Reputation</span>
+                        <div class="insight-pill pill-blue">Score</div>
+                    </div>
+                    <div class="insight-value mono">{{ analysis.top_contributor_reputation }}</div>
+                    <p class="insight-desc">Highest reputation score in dataset</p>
+                </div>
+
+                <div class="insight-card insight-card-wide">
+                    <div class="insight-header">
+                        <span class="insight-label">Dominant Category</span>
+                        <div class="insight-pill pill-orange">Tag</div>
+                    </div>
+                    <div class="insight-value insight-value-tag">{{ analysis.dominant_category }}</div>
+                </div>
+
+            </section>
+
+            <!-- Most Viewed Question -->
+            <section class="mvq-section">
+                <div class="section-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Most Viewed Question
+                </div>
+                <div class="mvq-card">
+                    <div class="mvq-icon">Q</div>
+                    <p>{{ analysis.most_viewed_question }}</p>
+                </div>
+            </section>
+
+            <!-- Bottom: Table + Chart -->
+            <div class="bottom-section">
+
+                <div class="table-section">
+                    <div class="section-label">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                        Top Tags
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tag</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for tag in analysis.top_tags %}
+                            <tr>
+                                <td class="rank-cell">{{ loop.index }}</td>
+                                <td><span class="tag-chip">{{ tag[0] }}</span></td>
+                                <td class="count-cell mono">{{ tag[1] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="chart-section">
+                    <div class="section-label">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        Tag Distribution
+                    </div>
+                    <div class="charts">
+                        <canvas id="tagsChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
     </div>
 
-    <!-- Insights row -->
-    <div class="insights">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        <div class="card">
-            <h3>Accepted Resolution</h3>
-            <p>{{ analysis.accepted_resolution_rate }}%</p>
-        </div>
+    <script id="tag-labels" type="application/json">
+    {{ analysis.top_tags | map(attribute=0) | list | tojson }}
+    </script>
 
-        <div class="card">
-            <h3>Top Contributor Reputation</h3>
-            <p>{{ analysis.top_contributor_reputation }}</p>
-        </div>
+    <script id="tag-values" type="application/json">
+    {{ analysis.top_tags | map(attribute=1) | list | tojson }}
+    </script>
 
-        <div class="card">
-            <h3>Dominant Category</h3>
-            <p>{{ analysis.dominant_category }}</p>
-        </div>
-
-    </div>
-
-    <!-- Most viewed question -->
-    <h2>Most Viewed Question</h2>
-
-    <div class="card">
-        <p>{{ analysis.most_viewed_question }}</p>
-    </div>
-
-    <!-- Top tags table -->
-    <h2>Top Tags</h2>
-
-    <table>
-        <tr>
-            <th>Tag</th>
-            <th>Count</th>
-        </tr>
-
-        {% for tag in analysis.top_tags %}
-        <tr>
-            <td>{{ tag[0] }}</td>
-            <td>{{ tag[1] }}</td>
-        </tr>
-        {% endfor %}
-
-    </table>
-
-    <!-- Chart placeholder -->
-    <h2>Tag Distribution</h2>
-
-    <div class="charts">
-        <canvas id="tagsChart"></canvas>
-    </div>
-
+    <script src="{{ url_for('static', filename='charts.js') }}"></script>
 </body>
 </html>

@@ -176,7 +176,6 @@ def analyze_questions():
     print("Analysis completed successfully.")
 
 
-# Standard Python entry point
 # Ensures this script only runs when executed directly
 if __name__ == "__main__":
     analyze_questions()
