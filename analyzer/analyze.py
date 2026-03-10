@@ -47,6 +47,31 @@ def compute_statistics(questions):
     # This list will contain every tag from every question
     all_tags = []
 
+    # dividing tags into groups for group wise analysis
+    topic_groups = {
+    "CI/CD": ["azure-devops", "cicd", "continuous-integration", "git"],
+
+    "Containers": ["docker", "kubernetes"],
+
+    "Cloud": ["azure", "amazon-web-services"],
+
+    "Automation": ["python", "bash"]
+    }
+
+    # topic metrics storage
+    topic_metrics = {}
+
+    for topic in topic_groups:
+        topic_metrics[topic] = {
+            "questions": [],
+            "total_score": 0,
+            "total_answers": 0,
+            "answered_count": 0,
+            "total_views": 0,
+            "accepted_count": 0
+        }
+
+
     for q in questions:
 
         # Accumulate scores
@@ -62,6 +87,26 @@ def compute_statistics(questions):
         # Collect tags
         tags = q.get("tags", [])
         all_tags.extend(tags)
+
+        # calculating group wise metrics
+        for topic, topic_tags in topic_groups.items():
+
+            if any(tag in tags for tag in topic_tags):
+
+                topic_metrics[topic]["questions"].append(q)
+
+                topic_metrics[topic]["total_score"] += q.get("score", 0)
+
+                topic_metrics[topic]["total_answers"] += q.get("answer_count", 0)
+
+                topic_metrics[topic]["total_views"] += q.get("view_count", 0)
+
+                if q.get("is_answered"):
+                    topic_metrics[topic]["answered_count"] += 1
+
+                if q.get("accepted_answer_id"):
+                    topic_metrics[topic]["accepted_count"] += 1
+
 
         # Add total views
         total_views += q.get("view_count", 0)
@@ -105,6 +150,9 @@ def compute_statistics(questions):
     "continuous-integration": "CI/CD"
     }
 
+
+
+
     category_counter = Counter()
 
     for tag in filtered_tags:
@@ -112,6 +160,29 @@ def compute_statistics(questions):
             category_counter[category_map[tag]] += 1
 
     dominant_category = category_counter.most_common(1)[0][0] if category_counter else "Unknown"
+
+    # topic wise derived metric calculation
+    topic_analysis = {}
+
+    for topic, data in topic_metrics.items():
+
+        count = len(data["questions"])
+
+        if count == 0:
+            continue
+
+        topic_analysis[topic] = {
+            "average_score": round(data["total_score"] / count, 2),
+
+            "average_answer_count": round(data["total_answers"] / count, 2),
+
+            "resolved_percentage": round((data["answered_count"] / count) * 100, 2),
+
+            "average_views": round(data["total_views"] / count, 2),
+
+            "accepted_resolution_rate": round((data["accepted_count"] / count) * 100, 2)
+        }
+    
 
     # Round values for cleaner dashboard display
     results = {
@@ -136,7 +207,9 @@ def compute_statistics(questions):
 
     "most_viewed_question": most_viewed_question,
 
-    "dominant_category": dominant_category
+    "dominant_category": dominant_category,
+    
+    "topic_analysis": topic_analysis,
 
     }
 
