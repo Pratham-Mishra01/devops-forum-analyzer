@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Topic Analytics — DevOps Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='topics.css') }}">
+</head>
+<body>
+<div class="dashboard-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span>DevOps<br>Analyzer</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/" class="nav-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                Overview
+            </a>
+            <a href="/topics" class="nav-item active">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="18" x2="15" y2="18"/><line x1="6" y1="9" x2="6" y2="15"/><line x1="18" y1="9" x2="18" y2="15"/></svg>
+                Topic Analytics
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="status-dot"></div>
+            <span>Live Data</span>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="top-header">
+            <div class="header-left">
+                <h1>Topic Analytics</h1>
+                <p class="header-sub">DevOps Forum — Per-topic breakdown</p>
+            </div>
+            <div class="header-right">
+                <div class="header-badge">
+                    <div class="pulse-dot"></div>
+                    {{ topic_analysis | length }} topics tracked
+                </div>
+            </div>
+        </header>
+
+        <!-- Strongest Topic Banner -->
+        {% set best_topic = namespace(name="", views=0) %}
+        {% for topic, data in topic_analysis.items() %}
+            {% if data.average_views > best_topic.views %}
+                {% set best_topic.views = data.average_views %}
+                {% set best_topic.name = topic %}
+            {% endif %}
+        {% endfor %}
+
+        <section class="mvq-section">
+            <div class="section-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Strongest Topic by Average Views
+            </div>
+            <div class="mvq-card strongest-banner">
+                <div class="mvq-icon strongest-icon">🏆</div>
+                <div class="strongest-body">
+                    <span class="strongest-name">{{ best_topic.name }}</span>
+                    <span class="strongest-stat">{{ best_topic.views }} avg. views — highest engagement across all topics</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topic Cards Grid -->
+        <section class="topic-cards-section">
+            <div class="section-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                Topic Breakdown
+            </div>
+            <div class="topic-cards-grid">
+                {% set accent_classes = ["accent-blue", "accent-teal", "accent-purple", "accent-orange"] %}
+                {% for topic, data in topic_analysis.items() %}
+                {% set accent = accent_classes[loop.index0 % 4] %}
+                <div class="topic-card {{ accent }}">
+                    <div class="topic-card-header">
+                        <span class="topic-name">{{ topic }}</span>
+                        <span class="topic-index mono">#{{ loop.index }}</span>
+                    </div>
+                    <div class="topic-metrics">
+
+                        <div class="topic-metric">
+                            <span class="metric-label">Avg Score</span>
+                            <span class="metric-value mono">{{ data.average_score }}</span>
+                        </div>
+
+                        <div class="topic-metric">
+                            <span class="metric-label">Avg Answers</span>
+                            <span class="metric-value mono">{{ data.average_answer_count }}</span>
+                        </div>
+
+                        <div class="topic-metric">
+                            <span class="metric-label">Resolved</span>
+                            <span class="metric-value mono">{{ data.resolved_percentage }}<small>%</small></span>
+                        </div>
+
+                        <div class="topic-metric">
+                            <span class="metric-label">Avg Views</span>
+                            <span class="metric-value mono">{{ data.average_views }}</span>
+                        </div>
+
+                    </div>
+
+                    <div class="topic-rate-row">
+                        <div class="rate-label-row">
+                            <span class="metric-label">Accepted Resolution Rate</span>
+                            <span class="rate-value mono">{{ data.accepted_resolution_rate }}%</span>
+                        </div>
+                        <div class="topic-bar">
+                            <div class="topic-bar-fill" style="width: {{ data.accepted_resolution_rate }}%"></div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Comparative Chart -->
+        <section class="chart-full-section">
+            <div class="section-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Comparative Topic Analysis
+            </div>
+            <div class="charts chart-tall">
+                <canvas id="topicsChart"></canvas>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Pass topic data to JS -->
+<script id="topic-data" type="application/json">
+{{ topic_analysis | tojson }}
+</script>
+
+<script src="{{ url_for('static', filename='topics_chart.js') }}"></script>
+</body>
+</html>

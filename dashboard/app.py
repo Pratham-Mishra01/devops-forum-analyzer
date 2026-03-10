@@ -15,5 +15,13 @@ def home():
      and makes it available in html under the same name''' 
     return render_template("index.html",analysis=analysis)
 
+@app.route("/topics")
+def topics():
+    with open("data/analysis.json", "r") as f:
+        analysis = json.load(f)
+    topic_analysis = analysis.get("topic_analysis", {})
+    return render_template("topics.html", topic_analysis=topic_analysis)
+
+
 if __name__=="__main__":
     app.run(debug=True)
