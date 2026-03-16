@@ -23,7 +23,7 @@ def fetch_devops_questions():
         questions.append({
             "title": item["title"],     # can be used for keyword analysis
             "tags": item["tags"],       #trending devops topics
-            "score": item["score"],     # no. of upvotes
+            "score": item["score"],     # no. of upvotes-downvotes
             "answer_count": item["answer_count"],       # no of people that answered
             "is_answered": item["is_answered"],         # True/False
             "link": item["link"],        # link to the actual question
