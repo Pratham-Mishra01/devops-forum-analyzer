@@ -7,15 +7,11 @@
     ],
     [
       "azure",
-      7
+      6
     ],
     [
       "amazon-web-services",
-      5
-    ],
-    [
-      "git",
-      5
+      6
     ],
     [
       "docker",
@@ -26,58 +22,62 @@
       5
     ],
     [
-      "continuous-integration",
+      "git",
       4
     ],
     [
-      "kubernetes",
-      3
+      "continuous-integration",
+      4
     ],
     [
       "python",
       3
     ],
     [
-      "bitbucket",
-      2
+      "jenkins",
+      3
+    ],
+    [
+      "kubernetes",
+      3
     ]
   ],
-  "average_score": 5.34,
-  "average_answer_count": 1.88,
-  "resolved_percentage": 44.0,
-  "average_views": 15972.26,
-  "highest_view_count": 338293,
-  "accepted_resolution_rate": 12.0,
+  "average_score": 1.68,
+  "average_answer_count": 1.48,
+  "resolved_percentage": 38.0,
+  "average_views": 3147.6,
+  "highest_view_count": 15579,
+  "accepted_resolution_rate": 10.0,
   "top_contributor_reputation": 31322,
-  "most_viewed_question": "How do I change timezone in a docker container?",
+  "most_viewed_question": "Git username is inconsistent with gitlab -error",
   "dominant_category": "CI/CD",
   "topic_analysis": {
     "CI/CD": {
-      "average_score": 2.72,
-      "average_answer_count": 1.22,
-      "resolved_percentage": 33.33,
-      "average_views": 3346.39,
-      "accepted_resolution_rate": 5.56
+      "average_score": 2.18,
+      "average_answer_count": 1.12,
+      "resolved_percentage": 29.41,
+      "average_views": 3089.94,
+      "accepted_resolution_rate": 0.0
     },
     "Containers": {
-      "average_score": 18.5,
-      "average_answer_count": 3.12,
-      "resolved_percentage": 75.0,
-      "average_views": 52005.0,
-      "accepted_resolution_rate": 37.5
+      "average_score": 4.62,
+      "average_answer_count": 1.5,
+      "resolved_percentage": 62.5,
+      "average_views": 5033.25,
+      "accepted_resolution_rate": 25.0
     },
     "Cloud": {
-      "average_score": 1.42,
-      "average_answer_count": 1.83,
-      "resolved_percentage": 41.67,
-      "average_views": 3111.08,
+      "average_score": 0.58,
+      "average_answer_count": 1.75,
+      "resolved_percentage": 33.33,
+      "average_views": 2223.42,
       "accepted_resolution_rate": 8.33
     },
     "Automation": {
-      "average_score": 1.25,
+      "average_score": 1.0,
       "average_answer_count": 1.75,
       "resolved_percentage": 50.0,
-      "average_views": 946.25,
+      "average_views": 414.5,
       "accepted_resolution_rate": 25.0
     }
   }

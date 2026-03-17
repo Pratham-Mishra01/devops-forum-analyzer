@@ -1,9 +1,14 @@
 # render_template is a tool that builds HTML pages
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 import json
 import threading
 import time
 import subprocess
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from pipeline import run_pipeline
 
 # initializing application
 app=Flask(__name__)
@@ -31,6 +36,10 @@ def topics():
     topic_analysis = analysis.get("topic_analysis", {})
     return render_template("topics.html", topic_analysis=topic_analysis)
 
+@app.route("/refresh")
+def refresh():
+    run_pipeline()
+    return redirect("/")
 
 if __name__=="__main__":
     threading.Thread(target=auto_refresh, daemon=True).start()
