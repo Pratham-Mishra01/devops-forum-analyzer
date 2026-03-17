@@ -4,7 +4,7 @@
 
 DevOps Community Forum Analyzer is a data-driven analytics system that collects live DevOps discussions from Stack Overflow, processes engagement metrics, and presents topic-wise insights through a multi-page web dashboard.
 
-The project demonstrates a complete engineering pipeline involving data ingestion, analytics computation, dashboard visualization, containerization, and CI automation.
+The project demonstrates a complete engineering pipeline involving data ingestion, analytics computation, dashboard visualization, containerization, CI automation, and deployment readiness.
 
 ---
 
@@ -46,36 +46,47 @@ CI validation runs separately through GitHub Actions.
 ### Data Collection
 
 * Fetches DevOps-tagged questions from Stack Overflow using Stack Exchange API
-* Extracts relevant metadata such as score, answer count, views, and tags
+* Extracts metadata such as score, answer count, views, accepted answers, and tags
 
 ### Analytics Engine
 
-* Global engagement metrics:
+Global engagement metrics:
 
-  * average score
-  * average answer count
-  * resolved percentage
-  * average views
-  * accepted resolution rate
+* average score
+* average answer count
+* resolved percentage
+* average views
+* accepted resolution rate
+* dominant category
+* most viewed question
 
-* Topic-wise analytics:
+Topic-wise analytics:
 
-  * CI/CD
-  * Containers
-  * Cloud
-  * Automation
+* CI/CD
+* Containers
+* Cloud
+* Automation
+
+Each topic computes:
+
+* average score
+* average answer count
+* resolved percentage
+* average views
+* accepted resolution rate
 
 ### Dashboard
 
 * Overview page with KPI cards and tag distribution
-* Topic Analytics page with per-topic metrics and comparative charts
+* Topic Analytics page with per-topic metric cards and comparative charts
+* Manual refresh support for triggering a fresh analytics cycle
 
 ### DevOps Implementation
 
 * Dockerized deployment
 * GitHub Actions CI pipeline
 * Unit testing support
-* Docker image build verification
+* Artifact generation in CI
 
 ---
 
@@ -123,51 +134,123 @@ devops-forum-analyzer/
 ├── Dockerfile
 ├── requirements.txt
 ├── pipeline.py
+├── docker-compose.yml
 └── .github/workflows/ci.yml
 
 ---
 
-## Installation
+## Prerequisites
 
-Clone repository:
+Before running the project, ensure the following are installed:
 
+* Python 3.11 or above
+* Docker Desktop (if running containerized version)
+* Git
+
+---
+
+## Clone Repository
+
+```bash
 git clone <repository-url>
-
-Move into project folder:
-
 cd devops-forum-analyzer
+```
 
-Install dependencies:
+Replace `<repository-url>` with the repository link.
 
+---
+
+## Running Locally (Recommended for Development)
+
+### Step 1: Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
----
+### Step 2: Run analytics pipeline
 
-## Running Locally
-
-Run pipeline:
-
+```bash
 python pipeline.py
+```
 
-Start dashboard:
+This fetches fresh data from Stack Overflow and generates:
 
+* data/questions.json
+* data/analysis.json
+
+### Step 3: Start dashboard
+
+```bash
 python dashboard/app.py
+```
 
-Open browser:
+### Step 4: Open browser
 
+```text
 http://127.0.0.1:5000
+```
 
 ---
 
-## Docker Deployment
+## Running with Docker (Recommended for Machine-Independent Execution)
 
-Build image:
+### Step 1: Build Docker image
 
+Run from project root (folder containing Dockerfile):
+
+```bash
 docker build -t forum-analyzer .
+```
 
-Run container:
+### Step 2: Run container
 
+```bash
 docker run -p 5000:5000 forum-analyzer
+```
+
+### Step 3: Open browser
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## Running an Existing Docker Image Again
+
+If image is already built:
+
+```bash
+docker run -p 5000:5000 forum-analyzer
+```
+
+---
+
+## Manual Refresh Inside Dashboard
+
+The dashboard includes a manual refresh option.
+
+When triggered, it:
+
+* fetches latest Stack Overflow data
+* recomputes analytics
+* updates JSON outputs
+* reloads dashboard metrics
+
+---
+
+## Running Unit Tests
+
+```bash
+pytest
+```
+
+Expected result:
+
+```text
+1 passed
+```
 
 ---
 
@@ -178,7 +261,35 @@ GitHub Actions automatically performs:
 * dependency installation
 * unit testing
 * analytics pipeline execution
-* Docker build verification
+* artifact generation
+
+Generated artifact:
+
+* analysis.json
+
+---
+
+## Troubleshooting
+
+### Docker build error: Dockerfile not found
+
+Ensure terminal is inside project root:
+
+```bash
+cd devops-forum-analyzer
+```
+
+### Flask import issue
+
+Run dashboard only through:
+
+```bash
+python dashboard/app.py
+```
+
+### Port already in use
+
+Stop previous process or container using port 5000.
 
 ---
 
